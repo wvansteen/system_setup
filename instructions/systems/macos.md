@@ -1,10 +1,10 @@
 # Instructions to setup a macOS system
 
-## Manual Program Installation
+Either follow the directions, or run this [script](../../scripts/systems/macos.sh)
 
-## Scriptable Program Installation
+## Install Programs
 
-### Either follow the directions, or run this [script](../../scripts/systems/macos.sh)
+Either follow the directions, or run this [script](../../scripts/systems/macos/programs.sh)
 
 1. [Command Line Tools](https://osxdaily.com/2014/02/12/install-command-line-tools-mac-os-x/)
 1. [Homebrew](https://brew.sh/)
@@ -15,7 +15,6 @@
 
 Use brew for all the scriptable installs
 
-powerlevel 10k
-zshrc
-git autocomplete
-global vscode extensions
+## To add
+
+

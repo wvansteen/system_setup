@@ -17,3 +17,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - global vscode extensions
   - global aliases
 - Script which installs everything in the macos instructions
+  - All program installation should be done in brew
+- Script should auto-detect OS and/or package manager

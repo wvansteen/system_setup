@@ -2,10 +2,10 @@
 
 ## Base System Setup
 
-- [Debian](systems/debian.md)
-- [macOS](systems/macos.md)
+- [Debian](instructions/systems/debian.md)
+- [macOS](instructions/systems/macos.md)
 
 ## Language Setup
 
-- [Haskell](languages/haskell.md)
-- [Scala](languages/scala.md)
+- [Haskell](instructions/languages/haskell.md)
+- [Scala](instructions/languages/scala.md)
