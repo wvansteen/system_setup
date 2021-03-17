@@ -1,0 +1,14 @@
+System Setup
+============
+William Van Steen william.h.van.steen@gmail.com
+
+Instructions and scripts to setup computers for programming just the way I {author} want the system to be. This is a work in progress.  As I setup systems with different operating systems, for different programming languages, and as my preferences evolve the change will show up here.
+
+== Base System Setup
+
+* link:instructions/ubuntu.md[Ubuntu]
+* link:instructions/macos.md[MacOs]
+
+== Language Setup
+
+

@@ -1,0 +1,26 @@
+
+MacOS Setup Instructions
+========================
+
+== Install Prerequisite 
+
+=== Command line tools
+
+[source,bash]
+----
+xcode-select --install
+----
+
+=== Brew
+
+[Source,bash]
+----
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+----
+
+== Install Applications
+
+. link:https://www.google.com/chrome[Chrome]
+. link:https://www.mozilla.org/en-US/firefox/new/[Firefox]
+. link:https://code.visualstudio.com/[VSCode]
+

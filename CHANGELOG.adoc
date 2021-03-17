@@ -1,0 +1,15 @@
+Changelog
+========
+
+All notable changes to this project will be documented in this file.
+
+The format is based on link:https://keepachangelong.com/en/1.0.0/[Keep a Changelog]
+and this project adheres to link:https://semvar.org/spec/v2.0.0.html[Semantic Versioning].
+
+== [Unreleased]
+
+Added::
+
+* Initial program instructions for macos
+* Instructions for:
+** MacOS initial setup
