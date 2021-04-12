@@ -1,0 +1,7 @@
+TODO
+====
+
+- Add script which runs on log in which
+-- installs and updates vim plugins
+-- nvim config
+-- dracula alacritty theme

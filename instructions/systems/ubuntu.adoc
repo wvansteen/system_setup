@@ -1,0 +1,18 @@
+Ubuntu Setup Instructions
+========================
+
+== Setup Terminal
+
+- link:https://github.com/alacritty/alacritty/blob/master/INSTALL.md[Alacritty Manual Installation]
+- link:https://launchpad.net/~fish-shell/+archive/ubuntu/release-3[Fish Shell]
+
+== Setup Vim
+
+- [source,fish]
+----
+sudo apt-get install neovim
+----
+- link:https://github.com/junegunn/vim-plug[Setup vim-plug]
+- link:https://github.com/ggreer/the_silver_searcher[The Silver Searcher]
+- link:https://draculatheme.com/vim/[Install Dracula]
+- link:https://github.com/kyazdani42/nvim-tree.lua[Vim File Tree]
