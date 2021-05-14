@@ -19,7 +19,24 @@ xcode-select --install
 
 == Install Applications
 
-. link:https://www.google.com/chrome[Chrome]
 . link:https://www.mozilla.org/en-US/firefox/new/[Firefox]
-. link:https://code.visualstudio.com/[VSCode]
+. [Source, bash]
+---
+brew install fish
+fish_location=$(which fish)
+echo $fish_location | sudo tee -a /etc/shells
+chsh -s $fish_location
+---
+. [Source,fish]
+---
+brew install alacritty
+mkdir -p $fish_complete_path[1]
+curl https://raw.githubusercontent.com/alacritty/alacritty/master/extra/completions/alacritty.fish > $fish_complete_path[1]/alacritty.fish
+curl https://raw.githubusercontent.com/dracula/alacritty/master/dracula.yml > ~/.config/alacritty/dracula.yml
+curl https://raw.githubusercontent.com/alacritty/alacritty/v0.7.2/alacritty.yml > ~/.config/alacritty/alacritty.yml
+---
+. [Source,fish]
+---
+brew install neovim
+---
 
