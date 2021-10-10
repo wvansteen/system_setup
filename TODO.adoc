@@ -5,3 +5,4 @@ TODO
 -- installs and updates vim plugins
 -- nvim config
 -- dracula alacritty theme
+- Fix author link in README
