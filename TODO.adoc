@@ -6,3 +6,5 @@ TODO
 -- nvim config
 -- dracula alacritty theme
 - Fix author link in README
+- programatic Gnome theme
+- firefox streaming bug https://bugzilla.mozilla.org/show_bug.cgi?id=1683808
