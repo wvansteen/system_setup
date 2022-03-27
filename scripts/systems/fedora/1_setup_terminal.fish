@@ -43,40 +43,31 @@ echo Setup theme
 install_fisher_package Tide IlanCosman/tide
 install_fisher_package Dracula dracula/fish
 
-echo Setup Alacritty
-if not which alacritty >> /dev/null
-	echo Installing Alacritty...
-	sudo dnf -y install alacritty
-	echo Alacritty installed
+echo Setup Kitty
+if not which kitty >> /dev/null
+	echo Installing Kitty...
+	sudo dnf -y install kitty
+	echo Kitty installed
 else
-	echo Alacritty already installed
+	echo Kitty already installed
 end
 
-set fish_alacritty_completions $__fish_config_dir/conf.d/alacritty.fish
-if not test -e $fish_alacritty_completions
-	echo Installing fish terminal completions...
-	curl -s https://raw.githubusercontent.com/alacritty/alacritty/master/extra/completions/alacritty.fish -o $fish_alacritty_completions
-	echo Fish terminal completions installed
-else	
-	echo Fish terminal completions already installed
+install_fisher_package "Kitty Completions" jomik/kitty-completions
+
+set kitty_config_location ~/.config/kitty
+set kitty_dracula_theme_zip {$kitty_config_location}/master.zip
+set kitty_dracula_theme_config {$kitty_config_location}/dracula.conf
+set kitty_dracula_theme_unzip {$kitty_config_location}/kitty-master
+
+if not test -e $kitty_dracula_theme_config
+	echo Downloading dracula kitty theme...
+  curl -Ls https://github.com/dracula/kitty/archive/master.zip -o $kitty_dracula_theme_zip 
+	unzip $kitty_dracula_theme_zip -d $kitty_config_location
+	cp {$kitty_dracula_theme_unzip}/*.conf $kitty_config_location
+	rm -r $kitty_dracula_theme_unzip
+	rm $kitty_dracula_theme_zip
 end
 
-if not test -d ~/.config/alacritty
-	echo Making alacritty config...
-	mkdir ~/.config/alacritty
-end
+cp -f configs/kitty.conf $kitty_config_location
 
-set alacritty_config ~/.config/alacritty/alacritty.yml
-if not test -e $alacritty_config
-	echo Downloading default Alacritty config...
-	curl -s https://raw.githubusercontent.com/alacritty/alacritty/v0.7.2/alacritty.yml -o $alacritty_config
-end
-
-set alacritty_dracula_theme_config ~/.config/alacritty/dracula.yml
-
-if not test -e $alacritty_dracula_theme_config
-	echo Downloading dracula alacritty theme...
-	curl -s https://raw.githubusercontent.com/dracula/alacritty/master/dracula.yml -o $alacritty_dracula_theme_config
-end
-
-echo Default Alacritty setup complete
+echo Default Kitty setup complete
