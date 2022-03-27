@@ -5,7 +5,8 @@
 set nvim_config_location $HOME/.config/nvim
 if not test -d $nvim_config_location
   mkdir $nvim_config_location
+else
+	rm -r $nvim_config_location/*
 end
 
-cp -rf vim_config/* $nvim_config_location
-
+cp -rf configs/vim_configs/* $nvim_config_location
