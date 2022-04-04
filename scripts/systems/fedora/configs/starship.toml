@@ -1,0 +1,20 @@
+add_newline = false
+
+[[battery.display]]
+threshold = 80
+
+[git_metrics]
+disabled = false
+
+[kubernetes]
+disabled = false
+
+[status]
+disabled = false
+
+[time]
+disabled = false
+
+[username]
+disabled = false
+show_always = true

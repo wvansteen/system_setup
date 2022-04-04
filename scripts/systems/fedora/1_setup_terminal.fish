@@ -2,18 +2,17 @@
 
 echo Setup Fonts
 set font_location "/usr/share/fonts"
-set meslo_family "MesloLGS NF" mesloLGS_NF
-set meslo_font_location $font_location/$meslo_family[2]
-set meslo_fonts regular bold italic bold_italic
+set font_family InconsolataGo
 
-if not test -d $meslo_font_location
-	echo Installing $meslo_family[1] Fonts...
-	set font_files (printf $meslo_family[2]"_%s," $meslo_fonts | sed 's/,$//')
-	sudo curl --create-dirs --output-dir $meslo_font_location -sL "https://github.com/IlanCosman/tide/blob/assets/fonts/{$font_files}.ttf?raw=true" -o "#1.tff"
-	sudo chmod a+rx $meslo_font_location
-	echo $meslo_family[1] Fonts Installed
+if not test -d {$font_location}/{$font_family}
+	echo Installing $font_family Fonts...
+	sudo curl -sLo /tmp/$font_family.zip https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/$font_family.zip
+	unzip -qd /tmp/$font_family /tmp/$font_family.zip
+	sudo mv /tmp/$font_family $font_location
+	sudo chmod a+rx $font_location/$font_family
+	echo font_family Fonts Installed
 else
-	echo $meslo_family[1] Fonts Already Installed
+	echo $font_family Fonts Already Installed
 end
 
 echo Setup up Fisher
@@ -40,8 +39,9 @@ end
 
 echo Setup theme
 
-install_fisher_package Tide IlanCosman/tide
-install_fisher_package Dracula dracula/fish
+sudo dnf install -yq starship
+cp configs/starship.toml ~/.config
+cp configs/config.fish ~/.config/fish
 
 echo Setup Kitty
 if not which kitty >> /dev/null
