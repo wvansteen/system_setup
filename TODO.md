@@ -1,11 +1,21 @@
 # TODO
 
-
+- Resolve ADR management
+- Update README with usage and development directions
+- Add ADRs for decisions
+	- Terminal Emulator
+	- terminal shell
+	- OS/distro support
+	- Theme selection
+	- Editor selection
 - Add script which
     - installs and updates vim plugins
     - nvim config
-- Resolve run format
 - Fix author link in README
 - programatic Gnome theme
 - firefox streaming bug https://bugzilla.mozilla.org/show_bug.cgi?id=1683808
-- Change to Starship
+- Change scripts to ?
+	- Check oil shell
+- Figure out how instructions and scripts line up
+- Figure out script organization
+- Add doc site
