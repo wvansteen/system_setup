@@ -1,13 +1,13 @@
 # TODO
 
-- Resolve ADR management
-- Update README with usage and development directions
 - Add ADRs for decisions
 	- Terminal Emulator
-	- terminal shell
+	- Shell
 	- OS/distro support
 	- Theme selection
 	- Editor selection
+- Make decision for installation/execution
+- Update README with usage and development directions
 - Add script which
     - installs and updates vim plugins
     - nvim config
