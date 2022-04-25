@@ -1,5 +1,0 @@
-project:
-  name: System Setup
-  tz: America/Denver
-  adrFolder: ./docs/decisions
-  packages: []
