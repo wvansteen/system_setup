@@ -6,7 +6,7 @@ layout: default
 
 Welcome to system setup documentation!
 
-This project and documentation is currently under construction.
+> This project and documentation is currently under construction.
 
 ## Usage
 

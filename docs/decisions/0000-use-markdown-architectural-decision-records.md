@@ -1,6 +1,10 @@
 
 # Use Markdown Decision Records
 
+* Status: Accepted
+* Decider: [wvansteen](https://github.com/wvansteen)
+* Date: 2022-04-22
+
 ## Context and Problem Statement
 
 We want to record meaningful decisions made in this project.
